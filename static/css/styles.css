@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  background-color: #1c1b29;
+  margin: 0;
+  padding: 20px;
+  color: #fefefe;
+  background-image: url("../bg-anime.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+h1,
+h2 {
+  color: #ff66c4;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ff66c4;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ffafcc;
+  outline: none;
+  box-shadow: 0 0 10px #ff66c4;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  max-height: 70vh;
+  scrollbar-width: thin;
+  scrollbar-color: #ff66c4 transparent;
+}
+
+.results::-webkit-scrollbar {
+  width: 8px;
+}
+.results::-webkit-scrollbar-thumb {
+  background-color: #ff66c4;
+  border-radius: 10px;
+}
+
+.search-result-item {
+  background-color: #1c1b29;
+  border-radius: 15px;
+  padding: 15px;
+  color: #fefefe;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-result-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 102, 196, 0.5);
+}
+
+.search-result-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ff66c4;
+}
+
+.search-result-item h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-result-item p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.recommendations div {
+  background-color: #1c1b29;
+  border-radius: 15px;
+  padding: 15px;
+  color: #fefefe;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendations div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 102, 196, 0.5);
+}
+
+.recommendations div h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.recommendations div p {
+  font-size: 14px;
+  color: #bbb;
+}
